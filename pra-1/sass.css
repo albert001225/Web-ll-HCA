@@ -1,12 +1,231 @@
-.box {
-  background-color: orange;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.daughter {
-  color: red;
+.container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 95%;
+  margin: 0 auto;
 }
 
-.comida {
-  color: blue;
+.container .up {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  border-radius: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container .up .img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+}
+
+.container .up h1 {
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.container .up p {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  font-size: 11px;
+  color: white;
+}
+
+.container .up-mid {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container .up-mid h2 {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.container .up-mid p {
+  font-size: 11px;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+
+.container .mid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: (300px)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 300px);
+  gap: 10px;
+}
+
+.container .mid .caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .mid .caja h3 {
+  margin-bottom: 15px;
+}
+
+.container .mid .caja p {
+  margin-top: 15px;
+}
+
+.container .mid .caja img {
+  width: 27vw;
+}
+
+.container .mid-down {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.container .mid-down h2 {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.container .mid-down p {
+  font-size: 11px;
+}
+
+.container .mid-down h2 {
+  margin-bottom: 10px;
+}
+
+.container .down-start {
+  background-color: cadetblue;
+  width: 100%;
+}
+
+.container .down-start .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+.container .down-start .head ._title {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .down-start .down {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-rows: (300x)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 300x);
+  gap: 10px;
+}
+
+.container .down-start .down .caj {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .down-start .down .caj div {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .down-start .down .caj div h5,
+.container .down-start .down .caj div p {
+  width: 250px;
+  height: 200px;
+}
+
+.container .down-start .down .caj div img {
+  width: 200px;
+  height: 140px;
+}
+
+.container .down-start .head-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid black;
+  height: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .down-start .head-end ._title-end {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=sass.css.map */
